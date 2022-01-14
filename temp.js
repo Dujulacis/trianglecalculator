@@ -16,3 +16,7 @@ function laukums (m1, m2, m3) {
 
  
 }
+
+
+const m = nolasa();
+m1 = m.m1; m2 = m.m2; m3 = m.m3;
