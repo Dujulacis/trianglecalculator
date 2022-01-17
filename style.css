@@ -1,0 +1,11 @@
+body {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    font-family: "Georgia";
+}
+button{
+    font-family:"Georgia"
+}
+.center{
+    text-align: center;
+    zoom: 1.5;
+}
