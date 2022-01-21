@@ -48,10 +48,17 @@ function rezultats() {
             t = "Trijstūris ar malu garumiem " + m1 + ", " + m2 + " un " + m3 + " eksistē! "
             if (m1 == m2 && m2 == m3) {
                 t += "Tas ir vienādmalu trijstūris! "
-            }
+                const p = perimeter(m1, m2, m3);
+                const s = Math.round(laukums(m1, m2, m3) * 100) / 100;
+                t += "Perimetrs ir " + p + " un laukums ir " + s + ".";
+            } else {
+                if (m1 == m2 || m2 == m3 || m3 == m1){
+                    t +="Tas ir vienādsānu trijstūris! "
+                }
             const p = perimeter(m1, m2, m3);
             const s = Math.round(laukums(m1, m2, m3) * 100) / 100;
             t += "Perimetrs ir " + p + " un laukums ir " + s + ".";
+            }
         }
     }
 console.log(t);
@@ -62,6 +69,6 @@ function izvadaTekstu(){
     console.log(teksts);
     const sakne = document.getElementById("izvade");
     const raksti = document.createElement("p");
-    raksti.innerHTML = teksts;
+    sakne.innerHTML = teksts;
     sakne.appendChild(raksti);
 }
